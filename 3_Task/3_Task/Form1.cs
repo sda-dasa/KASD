@@ -136,8 +136,8 @@ namespace _3_Task
                                     times[2, j] += Get_SortTime(mas, Sorts.HeapSort.Heap_Sort);
                                     Array.Copy(mas0, 0, mas, 0, sz);
                                     times[3, j] += Get_SortTime(mas, Sorts.Comb.CombSort);
-                                    Array.Copy(mas0, 0, mas, 0, sz);
-                                    times[4, j] += Get_SortTime(mas, null, Sorts.RadixSort, 0, mas.Length, 8);
+                                    //Array.Copy(mas0, 0, mas, 0, sz);
+                                    //times[4, j] += Get_SortTime(mas, null, Sorts.RadixSort, 0, mas.Length, 8);
                                 }
                                 sz *= 10;
 
