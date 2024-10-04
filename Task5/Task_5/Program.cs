@@ -1,58 +1,10 @@
 ﻿using ClassMyArrayList;
 
-
-
-
-/*
- 
-            var textFile = new StreamReader(file);
-            string line = textFile.ReadLine(); int N = Convert.ToInt32(line); 
- * 
- * 
- if (line == null || line == "" || N != line.Split().Length)
-                {
-                    conditionsright = false; Console.WriteLine("Размерность матрицы не совпадает с размерностью пространства");
-                }
-                else
-                {
-                    for (int i = 0; i <= N - 1; i++)
-                    {
-                        f[j, i] = Convert.ToInt32(line.Split()[i]); Console.Write($"{f[j, i]}  ");
-                    }
-                    line = textFile.ReadLine();
-
-
-
-*/
-
-
 // строка - набор символов без пробелов - любой пробел - сигнал переходить на новую строку
 
 var input = new StreamReader("input.txt");
 
 MyArrayList_<string> tegs = new MyArrayList_<string>();
-
-//for (int i = 0; result[i] != ' '; i++)
-//{
-//    if (result[i] == '<') // может,закинуть его в стек?
-//    {
-//        dop = result[i] + ""; continue;
-//    }
-//    if (dop.Length > 0)
-//    {
-//        if (dop.Length == 1)
-//            if ((int)result[i] > 40 && (int)result[i] < 200) { dop += result[i]; continue; } // вот здесь ограничение - должны быть только буквы 
-//            else { dop = ""; continue; }
-//        if (result[i] == '>') { dop += result[i]; tegs.Add(dop); dop = ""; continue; }
-//        if ((int)result[i] > 30 && (int)result[i] < 200) { dop += result[i]; continue; }
-
-
-//    }
-//    //if (result[i] == '>') dop = "";
-
-//}
-
-
 
 string dop;
 
