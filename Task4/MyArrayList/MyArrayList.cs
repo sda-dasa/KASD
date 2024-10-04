@@ -10,6 +10,7 @@ public class MyArrayList<T>
 
     public MyArrayList(int capacity = 0) // создание пустого массива
     {
+        if (capacity < 0 || capacity > 1000) throw new Exception("Значение емкости должно лежать в пределах от 0 до 1000");
         this.size = 0;
         this.Сapacity = capacity;
         this.elementData = new T[this.Сapacity]; // ~ new T[0]
@@ -18,6 +19,7 @@ public class MyArrayList<T>
 
     public MyArrayList(T[] a) //создание массива с помощью другого массива
     {
+        if (a == null) throw new ArgumentNullException("array a");
         this.size = a.Length; this.Сapacity = a.Length;
         this.elementData = a;
     }
@@ -27,6 +29,7 @@ public class MyArrayList<T>
     // новый массив с размером 1.5х (сохранить его во внутренней переменной объекта MyArrayList_
     public void Add(T item) // добавляем один элемент в конец
     {
+        if (item == null) throw new ArgumentNullException("item")
         if (this.Сapacity <= this.size) NewSize();
         if (this.Сapacity >= this.size + 1) this.elementData[this.size++] = item;
 
@@ -43,7 +46,7 @@ public class MyArrayList<T>
 
     public void AddAll(T[] a) // для добавления элементов из массива
     {
-        if (a == null) throw new ArgumentNullException("null array");
+        if (a == null) throw new ArgumentNullException("array a");
 
         if (a.Length == 0) return;
 
