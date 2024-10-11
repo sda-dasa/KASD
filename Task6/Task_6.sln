@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35219.272
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Task_6", "Task_6\Task_6.csproj", "{FA673F94-D2D0-4C5B-BC64-3E89DCE742D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYVector", "MYVector\MYVector.csproj", "{32CFB6EA-6F34-430A-B7F4-1D9D2AB9FB4F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FA673F94-D2D0-4C5B-BC64-3E89DCE742D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA673F94-D2D0-4C5B-BC64-3E89DCE742D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA673F94-D2D0-4C5B-BC64-3E89DCE742D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA673F94-D2D0-4C5B-BC64-3E89DCE742D5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32CFB6EA-6F34-430A-B7F4-1D9D2AB9FB4F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32CFB6EA-6F34-430A-B7F4-1D9D2AB9FB4F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32CFB6EA-6F34-430A-B7F4-1D9D2AB9FB4F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32CFB6EA-6F34-430A-B7F4-1D9D2AB9FB4F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EE9E8BE0-DB00-4DDB-AB39-D2569DD3E078}
+	EndGlobalSection
+EndGlobal
