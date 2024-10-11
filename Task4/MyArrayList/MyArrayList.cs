@@ -82,7 +82,7 @@ public class MyArrayList<T>
 
     public bool ContainsAll(T[] a)
     {
-        ArgumentNullException.ThrowIfNull(a); // if (a == null) throw new ArgumentNullException ("array a");
+        ArgumentNullException.ThrowIfNull(a); // if (a == null) throw new ArgumentNullException ("a");
         if (a.Length == 0) throw new ArgumentException("sent array is empty");
 
         foreach (T item in a)
@@ -121,7 +121,7 @@ public class MyArrayList<T>
     public void RetainAll(T[] a)
     {
         if (this.IsEmpty()) return;
-        if (a == null) throw new ArgumentNullException("sent array is empty");
+        if (a == null) throw new ArgumentNullException("array");
         if (a.Length == 0) return;
         T[] newAr = new T[this.size]; int index = 0;
         for (int i = 0; i <= this.size - 1; i++)
@@ -139,22 +139,25 @@ public class MyArrayList<T>
 
     public T[] ToArray() // возвращает массив объектов, который содержит все элементы массива
     {
-        return Sublist(0, this.size);
+        T[] newAr = new T[this.elementCount];
+        for (int i = 0; i < this.elementCount; i++) newAr[i] = this.elementData[i];
+        return newAr;
     }
 
 
     public void ToArray(ref T[] a)
     {
-        a = this.ToArray();
-    }
-    /// ??? if (a == null) newAr <= this.elemData; ret. newAr; (if a!= null) a <= this.elemData; ret. a; ???
+         if (array == null) array = ToArray();
 
+         if (array.Length >= this.elementCount)
+             for (int i = 0; i < this.elementCount; i++) array[i] = this.elementData[i]; return;
+         throw new ArgumentException("The length of the array is less than the length of the list");
+    }
 
     public void Add(int index, T el)
     {
-        if (el == null) throw new ArgumentNullException("value a");
-        if (this.elementData == null) throw new Exception("array is null");
-
+        if (el == null) throw new ArgumentNullException("el");
+        
         if (this.Сapacity <= index) NewSize(index);
         this.elementData[index] = el;
 
